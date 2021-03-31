@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [try-clojure.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 0))))
+(deftest id-test
+  (testing "id returns what it get"
+    (is (= (id 0) 0))))
