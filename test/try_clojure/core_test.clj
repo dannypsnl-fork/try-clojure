@@ -16,3 +16,12 @@
   (testing "reg replace"
     (is (= (clojure.string/replace "left-eye" #"^left-" "right-")
            "right-eye"))))
+
+(deftest fib-test
+  (testing "fib"
+    (is (= (fib 0) 1))
+    (is (= (fib 1) 1))
+    (is (= (fib 2) 2))
+    (is (= (fib 3) 3))
+    (is (= (fib 4) 5))
+    (is (= (fib 5) 8))))
