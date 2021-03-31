@@ -11,3 +11,8 @@
     (is (= (multi-add 1 2 3) 6))
     (is (= (multi-add 1 2) 3))
     (is (= (multi-add 1) 1))))
+
+(deftest reg-replace-test
+  (testing "reg replace"
+    (is (= (clojure.string/replace "left-eye" #"^left-" "right-")
+           "right-eye"))))
