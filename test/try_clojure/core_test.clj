@@ -4,18 +4,18 @@
 
 (deftest id-test
   (testing "id returns what it get"
-    (is (= (id 0) 0))))
+    (is (= 0 (id 0)))))
 
 (deftest multi-add-test
   (testing "multi-add"
-    (is (= (multi-add 1 2 3) 6))
-    (is (= (multi-add 1 2) 3))
-    (is (= (multi-add 1) 1))))
+    (is (= 6 (multi-add 1 2 3)))
+    (is (= 3 (multi-add 1 2)))
+    (is (= 1 (multi-add 1)))))
 
 (deftest reg-replace-test
   (testing "reg replace"
-    (is (= (clojure.string/replace "left-eye" #"^left-" "right-")
-           "right-eye"))))
+    (is (= "right-eye"
+           (clojure.string/replace "left-eye" #"^left-" "right-")))))
 
 (deftest fib-test
   (testing "fib"
