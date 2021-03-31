@@ -19,9 +19,10 @@
 
 (deftest fib-test
   (testing "fib"
-    (is (= (fib 0) 1))
-    (is (= (fib 1) 1))
-    (is (= (fib 2) 2))
-    (is (= (fib 3) 3))
-    (is (= (fib 4) 5))
-    (is (= (fib 5) 8))))
+    (is (= 1 (fib 0)))
+    (is (= 1 (fib 1)))
+    (is (= 2 (fib 2)))
+    (is (= 3 (fib 3)))
+    (is (= 5 (fib 4)))
+    (is (= 8 (fib 5)))
+    (is (= 1346269 (fib 30)))))
