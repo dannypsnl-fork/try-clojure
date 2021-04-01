@@ -26,3 +26,7 @@
     (is (= 5 (fib 4)))
     (is (= 8 (fib 5)))
     (is (= 1346269 (fib 30)))))
+
+(deftest backwards-test
+  (testing "backwards"
+    (is (= "I am backwards" (backwards (" backwards" " am" "I" str))))))
