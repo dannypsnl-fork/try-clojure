@@ -16,29 +16,7 @@
        1 1
        (+ (fib (- n 1))
           (fib (- n 2)))))))
-(defn wrong-fib1 [n]
-  (condp = n
-    0
-    1 1
-    (+ (fib (- n 1))
-       (fib (- n 2)))))
-(defn wrong-fib2 [n]
-  (condp = n
-    0 1
-      1
-    (+ (fib (- n 1))
-       (fib (- n 2)))))
 
 (defmacro backwards
   [form]
   (reverse form))
-
-(defn foo [n]
-  (let [x n
-        y 2]
-    (+ x y)))
-
-(def a-map
-  {:a 1
-   :b 2
-   :c 3})
