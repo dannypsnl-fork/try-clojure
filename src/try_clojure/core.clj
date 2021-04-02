@@ -32,3 +32,8 @@
 (defmacro backwards
   [form]
   (reverse form))
+
+(defn foo [n]
+  (let [x n
+        y 2]
+    (+ x y)))
