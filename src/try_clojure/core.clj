@@ -16,6 +16,18 @@
        1 1
        (+ (fib (- n 1))
           (fib (- n 2)))))))
+(defn wrong-fib1 [n]
+  (condp = n
+    0
+    1 1
+    (+ (fib (- n 1))
+       (fib (- n 2)))))
+(defn wrong-fib2 [n]
+  (condp = n
+    0 1
+      1
+    (+ (fib (- n 1))
+       (fib (- n 2)))))
 
 (defmacro backwards
   [form]
