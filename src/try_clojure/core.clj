@@ -17,6 +17,5 @@
        (+ (fib (- n 1))
           (fib (- n 2)))))))
 
-(defmacro backwards
-  [form]
+(defmacro backwards [form]
   (reverse form))
