@@ -37,3 +37,8 @@
   (let [x n
         y 2]
     (+ x y)))
+
+(def a-map
+  {:a 1
+   :b 2
+   :c 3})
