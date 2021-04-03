@@ -19,3 +19,11 @@
 
 (defmacro backwards [form]
   (reverse form))
+
+(defmacro let-sexp
+  [bindings & body]
+  (doseq [bind bindings]
+    (assert (= (-> bind count) 2) "invalid binding"))
+  `((fn [~@(map first bindings)]
+     ~@body)
+    ~@(map second bindings)))
